@@ -1,0 +1,42 @@
+.wrapper{
+    display: flex;
+    align-items: center;
+}
+.carousel-wrapper{
+    width: 840px;
+    margin: 0 20px;
+    overflow: hidden;
+}
+.carousel{
+    position: relative;
+    left: -640px;
+    display: flex;       
+}
+.item{
+    display: flex;
+    gap: 20px;
+}
+.Pets-content__card{
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+@keyframes move-right { 
+ from {left: -640px;}
+ to {left: -1280px;}
+}
+ 
+@keyframes move-left {
+ from {left: -640px;}
+ to {left: 0px;}
+}
+ 
+.transition-left{
+    animation-name: move-left;
+    animation-duration: 2s;
+}
+.transition-right {
+ animation-name: move-right;
+ animation-duration: 2s;
+}      
